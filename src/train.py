@@ -32,8 +32,10 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 mlflow.set_experiment("iris_classification")
 
-model1, acc1 = train_and_log(LogisticRegression(max_iter=200), "LogisticRegression", X_train, y_train, X_test, y_test)
-model2, acc2 = train_and_log(RandomForestClassifier(), "RandomForest", X_train, y_train, X_test, y_test)
+model1, acc1 = train_and_log(LogisticRegression(max_iter=200), \
+                "LogisticRegression", X_train, y_train, X_test, y_test)
+model2, acc2 = train_and_log(RandomForestClassifier(), \
+                "RandomForest", X_train, y_train, X_test, y_test)
 
 # Save best model
 best_model = model1 if acc1 >= acc2 else model2
