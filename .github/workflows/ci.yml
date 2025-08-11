@@ -34,5 +34,5 @@ jobs:
     - name: Build and push Docker image
       run: |
         docker build -t iris-ml-api .
-        docker tag iris-ml-api mlops/iris-ml-api
-        docker push mlops/iris-ml-api
+        docker tag iris-ml-api gagankhurana/mlops:iris-ml-api 
+        docker push gagankhurana/mlops:iris-ml-api

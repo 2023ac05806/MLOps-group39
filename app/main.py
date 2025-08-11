@@ -6,7 +6,11 @@ import logging
 app = FastAPI()
 model = joblib.load("models/model.pkl")
 
-logging.basicConfig(filename='logs/prediction_logs.txt', level=logging.INFO)
+logging.basicConfig(
+    filename='logs/prediction_logs.txt',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
 
 
 @app.post("/predict")
