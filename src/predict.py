@@ -1,5 +1,6 @@
 import joblib
 
+
 def predict_iris(sepal_length, sepal_width, petal_length, petal_width):
     # Load trained model
     model = joblib.load("model.pkl")
@@ -11,6 +12,7 @@ def predict_iris(sepal_length, sepal_width, petal_length, petal_width):
     prediction = model.predict(input_data)
 
     return prediction[0]
+
 
 if __name__ == "__main__":
     # Sample input

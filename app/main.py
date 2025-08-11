@@ -8,6 +8,7 @@ model = joblib.load("models/model.pkl")
 
 logging.basicConfig(filename='logs/prediction_logs.txt', level=logging.INFO)
 
+
 @app.post("/predict")
 def predict(input_data: IrisInput):
     features = [[
@@ -17,5 +18,7 @@ def predict(input_data: IrisInput):
         input_data.petal_width,
     ]]
     prediction = model.predict(features)[0]
-    logging.info(f"Prediction request: {input_data.dict()}, Prediction: {prediction}")
+    logging.info(
+        f"Prediction request: {input_data.dict()}, Prediction: {prediction}"
+    )
     return {"prediction": int(prediction)}
