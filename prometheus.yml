@@ -1,0 +1,8 @@
+# prometheus.yml
+global:
+  scrape_interval: 15s # How frequently to scrape targets
+
+scrape_configs:
+  - job_name: 'fastapi-app'
+    static_configs:
+      - targets: ['app:8000'] # The host and port where your FastAPI app is running

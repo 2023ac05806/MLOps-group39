@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.schema import IrisInput
+from prometheus_fastapi_instrumentator import Instrumentator
 import joblib
 import logging
 
@@ -11,6 +12,9 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
+
+# This line adds the /metrics endpoint
+Instrumentator().instrument(app).expose(app)
 
 
 @app.post("/predict")

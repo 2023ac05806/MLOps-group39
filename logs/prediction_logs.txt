@@ -1,4 +1,10 @@
-2025-08-04 20:00:00 INFO Prediction request: {'sepal_length': 5.1, 'sepal_width': 3.5, 'petal_length': 1.4, 'petal_width': 0.2}, Prediction: 0
-2025-08-04 20:01:15 INFO Prediction request: {'sepal_length': 6.2, 'sepal_width': 2.8, 'petal_length': 4.8, 'petal_width': 1.8}, Prediction: 2
-2025-08-04 20:02:42 INFO Prediction request: {'sepal_length': 5.7, 'sepal_width': 2.8, 'petal_length': 4.1, 'petal_width': 1.3}, Prediction: 1
-INFO:root:Prediction request: {'sepal_length': 5.1, 'sepal_width': 3.5, 'petal_length': 1.4, 'petal_width': 0.2}, Prediction: 0
+2025-08-11 09:25:56,716 - INFO - Prediction request: {'sepal_length': 5.1, 'sepal_width': 3.5, 'petal_length': 1.4, 'petal_width': 0.2}, Prediction: 0
+2025-08-11 09:37:54,724 - INFO - Prediction request: {'sepal_length': 0.0, 'sepal_width': 0.0, 'petal_length': 0.0, 'petal_width': 0.0}, Prediction: 0
+2025-08-11 09:43:16,548 - INFO - Prediction request: {'sepal_length': 0.0, 'sepal_width': 0.0, 'petal_length': 0.0, 'petal_width': 0.0}, Prediction: 0
+2025-08-11 09:43:41,253 - INFO - Prediction request: {'sepal_length': 3.0, 'sepal_width': 4.0, 'petal_length': 5.0, 'petal_width': 6.0}, Prediction: 2
+2025-08-11 10:17:15,385 - INFO - Prediction request: {'sepal_length': 0.0, 'sepal_width': 0.0, 'petal_length': 0.0, 'petal_width': 0.0}, Prediction: 0
+2025-08-11 10:17:20,524 - INFO - Prediction request: {'sepal_length': 0.0, 'sepal_width': 0.0, 'petal_length': 4.0, 'petal_width': 0.0}, Prediction: 1
+2025-08-11 10:17:25,243 - INFO - Prediction request: {'sepal_length': 0.0, 'sepal_width': 2.0, 'petal_length': 4.0, 'petal_width': 0.0}, Prediction: 0
+2025-08-11 10:25:07,248 - INFO - Prediction request: {'sepal_length': 0.0, 'sepal_width': 2.0, 'petal_length': 4.0, 'petal_width': 0.0}, Prediction: 0
+2025-08-11 10:25:10,933 - INFO - Prediction request: {'sepal_length': 0.0, 'sepal_width': 2.0, 'petal_length': 4.0, 'petal_width': 3.0}, Prediction: 2
+2025-08-11 10:25:14,431 - INFO - Prediction request: {'sepal_length': 1.0, 'sepal_width': 2.0, 'petal_length': 4.0, 'petal_width': 3.0}, Prediction: 2
